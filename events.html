@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Meetings, webinars, deadlines and student updates for IIT Bombay MSc Physics freshers.">
+  <meta name="theme-color" content="#291c3b">
+  <title>Events & Updates — IITB Physics Fresher Guide</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="physics-dashboard-page dashboard-subpage guide-page page-events">
+<a class="skip-link" href="#main">Skip to updates</a>
+
+<div class="physics-sky subpage-physics-sky" aria-hidden="true">
+  <span class="formula f1">t → next event</span>
+  <span class="formula f2">ΔE · Δt ≥ ħ/2</span>
+  <span class="formula f3">reminder = event − 30 min</span>
+  <span class="formula f4">sync → calendar</span>
+  <svg class="wave-field" viewBox="0 0 1200 220" preserveAspectRatio="none">
+    <path d="M0,110 C100,20 200,200 300,110 S500,20 600,110 S800,200 900,110 S1100,20 1200,110"></path>
+    <path d="M0,150 C120,70 220,215 350,120 S560,55 700,140 S980,60 1200,145"></path>
+  </svg>
+</div>
+
+<nav class="dashboard-nav subpage-dashboard-nav" aria-label="Primary navigation">
+  <a class="dashboard-brand" href="./index.html">
+    <span class="brand-orbit" aria-hidden="true"><i></i></span>
+    <span><strong>IITB Physics</strong><small>Fresher Guide</small></span>
+  </a>
+  <div class="dashboard-nav-links">
+    <a href="./academics.html">Academics</a>
+    <a href="./campus-life.html">Campus</a>
+    <a href="./seniors.html">Seniors</a>
+    <a href="./clubs.html">Clubs</a>
+    <a class="active" href="./events.html">Updates</a>
+  </div>
+  <a class="emergency-pill" href="./emergency.html"><span>●</span> Emergency</a>
+</nav>
+
+<main id="main" class="dashboard-main dashboard-subpage-main">
+  <section class="page-hero events-page-hero">
+    <div class="subpage-card-topline">
+      <span class="card-index">LIVE</span>
+      <span class="card-symbol">⌁</span>
+    </div>
+    <div class="shell page-hero-grid">
+      <div class="reveal">
+        <p class="kicker">Meetings · Webinars · Deadlines</p>
+        <h1 class="page-title">Never miss the <em>small updates.</em></h1>
+        <p class="lede">A simple noticeboard for department meetings, webinars, workshops and important timings. Every event can be added directly to a calendar or reminder app.</p>
+        <div class="subpage-meta">
+          <span>Google Calendar</span>
+          <span>Outlook</span>
+          <span>Downloadable .ics reminders</span>
+        </div>
+      </div>
+      <div class="events-hero-visual reveal" aria-hidden="true">
+        <div class="event-orbit">
+          <span class="orbit-date">12</span>
+          <i class="orbit-one"></i>
+          <i class="orbit-two"></i>
+          <i class="orbit-three"></i>
+        </div>
+        <div class="hero-notice-card">
+          <span>Next update</span>
+          <strong>Meeting at 5:30 PM</strong>
+          <small>Reminder set for 5:00 PM</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="shell">
+      <div id="demo-banner" class="events-demo-banner">
+        <span>Demo data</span>
+        <p>The included entries are examples. Replace them inside <code>events-data.js</code> before publishing.</p>
+      </div>
+
+      <section class="events-summary" aria-label="Event summary">
+        <div><strong id="upcoming-count">2</strong><span>Upcoming</span></div>
+        <div><strong id="webinar-count">1</strong><span>Webinars</span></div>
+        <div><strong id="meeting-count">1</strong><span>Meetings</span></div>
+        <div><strong>IST</strong><span>Displayed timezone</span></div>
+      </section>
+
+      <section class="events-controls" aria-label="Search and filter events">
+        <label class="events-search">
+          <span>Search updates</span>
+          <input id="event-search" type="search" placeholder="Search meeting, webinar, location…" autocomplete="off">
+        </label>
+        <div class="event-filter-row" role="group" aria-label="Filter event category">
+          <button class="event-filter active" data-event-filter="all" type="button">All</button>
+          <button class="event-filter" data-event-filter="meeting" type="button">Meetings</button>
+          <button class="event-filter" data-event-filter="webinar" type="button">Webinars</button>
+          <button class="event-filter" data-event-filter="workshop" type="button">Workshops</button>
+          <button class="event-filter" data-event-filter="deadline" type="button">Deadlines</button>
+        </div>
+      </section>
+
+      <section class="events-section-head">
+        <div>
+          <p class="eyebrow">Upcoming</p>
+          <h2>What is happening next?</h2>
+        </div>
+        <p id="event-result-count" aria-live="polite">2 events shown</p>
+      </section>
+
+      <div id="events-list" class="events-list">
+        
+<article class="event-card" data-event-category="meeting">
+  <div class="event-date-tile"><span>JAN</span><strong>12</strong></div>
+  <div class="event-card-main">
+    <div class="event-card-topline">
+      <span class="event-category">Meeting</span>
+      <span class="event-draft-badge">Demo entry</span>
+    </div>
+    <h3>Example — Department Welcome Meeting</h3>
+    <p>Replace this demonstration entry with the actual meeting title, timing and details before publishing.</p>
+    <div class="event-meta">
+      <span>◷ 17:30–18:15 IST</span>
+      <span>⌖ Physics Department Seminar Room</span>
+      <span>By Department Coordinator</span>
+    </div>
+  </div>
+  <div class="event-card-actions">
+    <details class="reminder-menu">
+      <summary>Add reminder</summary>
+      <div class="reminder-options">
+        <button type="button" disabled>Google Calendar</button>
+        <button type="button" disabled>Outlook</button>
+        <button type="button" disabled>Download .ics</button>
+      </div>
+    </details>
+    
+  </div>
+</article>
+
+
+<article class="event-card" data-event-category="webinar">
+  <div class="event-date-tile"><span>JAN</span><strong>18</strong></div>
+  <div class="event-card-main">
+    <div class="event-card-topline">
+      <span class="event-category">Webinar</span>
+      <span class="event-draft-badge">Demo entry</span>
+    </div>
+    <h3>Example — Research Opportunities Webinar</h3>
+    <p>A sample webinar card showing how online events, registration links and reminders will appear.</p>
+    <div class="event-meta">
+      <span>◷ 18:00–19:00 IST</span>
+      <span>⌖ Online</span>
+      <span>By Physics Student Council</span>
+    </div>
+  </div>
+  <div class="event-card-actions">
+    <details class="reminder-menu">
+      <summary>Add reminder</summary>
+      <div class="reminder-options">
+        <button type="button" disabled>Google Calendar</button>
+        <button type="button" disabled>Outlook</button>
+        <button type="button" disabled>Download .ics</button>
+      </div>
+    </details>
+    <a class="event-secondary-action" href="https://example.com/replace-this-link" target="_blank" rel="noopener">Registration link ↗</a>
+  </div>
+</article>
+
+      </div>
+
+      <section id="past-events-section" class="past-events-section" hidden>
+        <details>
+          <summary>View previous updates <span id="past-count"></span></summary>
+          <div id="past-events-list" class="events-list compact"></div>
+        </details>
+      </section>
+
+      <section id="event-manager" class="event-manager panel" hidden>
+        <div class="event-manager-intro">
+          <p class="eyebrow">Maintainer helper</p>
+          <h2>Generate an event entry</h2>
+          <p>This form creates a ready-to-paste event object. It does not publish automatically because the website is hosted as a static GitHub Pages site.</p>
+        </div>
+        <form id="event-builder-form" class="event-builder-grid">
+          <label>Title<input name="title" required placeholder="Department meeting"></label>
+          <label>Category
+            <select name="category">
+              <option>Meeting</option><option>Webinar</option><option>Workshop</option>
+              <option>Deadline</option><option>Orientation</option><option>Social</option>
+            </select>
+          </label>
+          <label>Date<input name="date" type="date" required></label>
+          <label>Start time<input name="start" type="time" required></label>
+          <label>End time<input name="end" type="time" required></label>
+          <label>Location / platform<input name="location" placeholder="Seminar room or Zoom"></label>
+          <label class="builder-wide">Description<textarea name="description" rows="3"></textarea></label>
+          <label>Organizer<input name="organizer" placeholder="Department Coordinator"></label>
+          <label>Registration URL<input name="registrationUrl" type="url" placeholder="https://…"></label>
+          <button class="btn btn-primary builder-wide" type="submit">Generate event code</button>
+        </form>
+        <div id="event-code-output" class="event-code-output" hidden>
+          <div><strong>Copy this object into events-data.js</strong><button id="copy-event-code" type="button">Copy</button></div>
+          <pre><code id="event-code"></code></pre>
+        </div>
+      </section>
+
+      <p class="events-admin-note">Maintainer shortcut: open this page with <code>?manage=1</code> to generate a new event entry.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="dashboard-subpage-footer">
+  <div class="dashboard-bottom subpage-bottom">
+    <a class="bottom-note back-dashboard" href="./index.html">
+      <span>⌂</span>
+      <p><strong>Back to the dashboard</strong><br>Every major topic is one click away.</p>
+    </a>
+    <div class="subpage-footer-links" aria-label="Guide links">
+      <a href="./academics.html">Academics</a>
+      <a href="./campus-life.html">Campus</a>
+      <a href="./seniors.html">Seniors</a>
+      <a href="./clubs.html">Clubs</a>
+      <a href="./events.html">Updates</a>
+    </div>
+    <p class="maker-credit">Made by <strong>Ayushi Singh</strong> · Department Coordinator · Batch of ’27</p>
+  </div>
+</footer>
+
+<script src="./site.js"></script>
+<script src="./events-data.js"></script>
+<script>
+const eventsData = Array.isArray(window.EVENTS_DATA) ? window.EVENTS_DATA : [];
+const eventsList = document.querySelector('#events-list');
+const pastList = document.querySelector('#past-events-list');
+const pastSection = document.querySelector('#past-events-section');
+const searchInput = document.querySelector('#event-search');
+const filterButtons = [...document.querySelectorAll('.event-filter')];
+const resultCount = document.querySelector('#event-result-count');
+let activeEventFilter = 'all';
+
+function eventDate(event, key = 'start') {
+  const time = event[key] || event.start || '00:00';
+  return new Date(`${event.date}T${time}:00+05:30`);
+}
+
+function dateParts(event) {
+  const date = eventDate(event);
+  return {
+    month: date.toLocaleDateString('en-IN', { month: 'short', timeZone: 'Asia/Kolkata' }).toUpperCase(),
+    day: date.toLocaleDateString('en-IN', { day: '2-digit', timeZone: 'Asia/Kolkata' }),
+    full: date.toLocaleDateString('en-IN', { weekday: 'short', day: 'numeric', month: 'short', year: 'numeric', timeZone: 'Asia/Kolkata' })
+  };
+}
+
+function safeText(value) {
+  const node = document.createElement('div');
+  node.textContent = value || '';
+  return node.innerHTML;
+}
+
+function calendarDescription(event) {
+  return [event.description, event.organizer ? `Organizer: ${event.organizer}` : '', event.registrationUrl ? `Registration: ${event.registrationUrl}` : '']
+    .filter(Boolean).join('\n\n');
+}
+
+function compactUtc(date) {
+  return date.toISOString().replace(/[-:]/g, '').replace(/\.\d{3}Z$/, 'Z');
+}
+
+function googleCalendarUrl(event) {
+  const params = new URLSearchParams({
+    action: 'TEMPLATE',
+    text: event.title,
+    dates: `${compactUtc(eventDate(event, 'start'))}/${compactUtc(eventDate(event, 'end'))}`,
+    ctz: event.timezone || 'Asia/Kolkata',
+    details: calendarDescription(event),
+    location: event.location || ''
+  });
+  return `https://calendar.google.com/calendar/render?${params.toString()}`;
+}
+
+function outlookCalendarUrl(event) {
+  const params = new URLSearchParams({
+    subject: event.title,
+    startdt: eventDate(event, 'start').toISOString(),
+    enddt: eventDate(event, 'end').toISOString(),
+    body: calendarDescription(event),
+    location: event.location || '',
+    path: '/calendar/action/compose',
+    rru: 'addevent'
+  });
+  return `https://outlook.live.com/calendar/0/deeplink/compose?${params.toString()}`;
+}
+
+function downloadIcs(event) {
+  const content = [
+    'BEGIN:VCALENDAR',
+    'VERSION:2.0',
+    'PRODID:-//IITB Physics Fresher Guide//Events//EN',
+    'BEGIN:VEVENT',
+    `UID:${event.id}@iitbphysicsfreshie`,
+    `DTSTAMP:${compactUtc(new Date())}`,
+    `DTSTART:${compactUtc(eventDate(event, 'start'))}`,
+    `DTEND:${compactUtc(eventDate(event, 'end'))}`,
+    `SUMMARY:${String(event.title).replace(/,/g, '\\,')}`,
+    `DESCRIPTION:${calendarDescription(event).replace(/\n/g, '\\n').replace(/,/g, '\\,')}`,
+    `LOCATION:${String(event.location || '').replace(/,/g, '\\,')}`,
+    'END:VEVENT',
+    'END:VCALENDAR'
+  ].join('\r\n');
+
+  const blob = new Blob([content], { type: 'text/calendar;charset=utf-8' });
+  const link = document.createElement('a');
+  link.href = URL.createObjectURL(blob);
+  link.download = `${event.id || 'event'}.ics`;
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+  URL.revokeObjectURL(link.href);
+}
+
+function countdown(event) {
+  const diff = eventDate(event) - new Date();
+  if (diff <= 0) return 'Starting soon';
+  const days = Math.floor(diff / 86400000);
+  const hours = Math.floor((diff % 86400000) / 3600000);
+  if (days > 0) return `In ${days} day${days === 1 ? '' : 's'}`;
+  if (hours > 0) return `In ${hours} hour${hours === 1 ? '' : 's'}`;
+  return 'Starting soon';
+}
+
+function createEventCard(event, compact = false) {
+  const date = dateParts(event);
+  const article = document.createElement('article');
+  article.className = `event-card${compact ? ' event-card-compact' : ''}`;
+  article.dataset.eventCategory = String(event.category || '').toLowerCase();
+
+  const registration = event.registrationUrl
+    ? `<a class="event-secondary-action" href="${safeText(event.registrationUrl)}" target="_blank" rel="noopener">Registration link ↗</a>`
+    : '';
+
+  article.innerHTML = `
+    <div class="event-date-tile"><span>${date.month}</span><strong>${date.day}</strong></div>
+    <div class="event-card-main">
+      <div class="event-card-topline">
+        <span class="event-category">${safeText(event.category || 'Update')}</span>
+        ${event.draft ? '<span class="event-draft-badge">Demo entry</span>' : `<span class="event-countdown">${countdown(event)}</span>`}
+      </div>
+      <h3>${safeText(event.title)}</h3>
+      <p>${safeText(event.description)}</p>
+      <div class="event-meta">
+        <span>◷ ${safeText(event.start)}–${safeText(event.end)} IST</span>
+        <span>⌖ ${safeText(event.location || event.mode || 'Details soon')}</span>
+        ${event.organizer ? `<span>By ${safeText(event.organizer)}</span>` : ''}
+      </div>
+    </div>
+    <div class="event-card-actions">
+      <details class="reminder-menu">
+        <summary>Add reminder</summary>
+        <div class="reminder-options">
+          <a href="${googleCalendarUrl(event)}" target="_blank" rel="noopener">Google Calendar</a>
+          <a href="${outlookCalendarUrl(event)}" target="_blank" rel="noopener">Outlook Calendar</a>
+          <button class="ics-button" type="button">Download .ics</button>
+        </div>
+      </details>
+      ${registration}
+    </div>`;
+
+  article.querySelector('.ics-button').addEventListener('click', () => downloadIcs(event));
+  return article;
+}
+
+function filteredEvents(items) {
+  const query = searchInput.value.trim().toLowerCase();
+  return items.filter(event => {
+    const categoryMatch = activeEventFilter === 'all' || String(event.category).toLowerCase() === activeEventFilter;
+    const searchText = `${event.title} ${event.category} ${event.location} ${event.description} ${event.organizer}`.toLowerCase();
+    return categoryMatch && (!query || searchText.includes(query));
+  });
+}
+
+function renderEvents() {
+  const now = new Date();
+  const upcoming = eventsData
+    .filter(event => eventDate(event, 'end') >= now)
+    .sort((a, b) => eventDate(a) - eventDate(b));
+  const past = eventsData
+    .filter(event => eventDate(event, 'end') < now)
+    .sort((a, b) => eventDate(b) - eventDate(a));
+
+  const visibleUpcoming = filteredEvents(upcoming);
+  eventsList.replaceChildren();
+
+  if (!visibleUpcoming.length) {
+    const empty = document.createElement('div');
+    empty.className = 'events-empty';
+    empty.innerHTML = '<span>∅</span><h3>No matching upcoming events</h3><p>Try another filter, or add a new entry in events-data.js.</p>';
+    eventsList.appendChild(empty);
+  } else {
+    visibleUpcoming.forEach(event => eventsList.appendChild(createEventCard(event)));
+  }
+
+  const visiblePast = filteredEvents(past);
+  pastList.replaceChildren();
+  visiblePast.forEach(event => pastList.appendChild(createEventCard(event, true)));
+  pastSection.hidden = !visiblePast.length;
+  document.querySelector('#past-count').textContent = visiblePast.length ? `(${visiblePast.length})` : '';
+
+  resultCount.textContent = `${visibleUpcoming.length} event${visibleUpcoming.length === 1 ? '' : 's'} shown`;
+  document.querySelector('#upcoming-count').textContent = upcoming.length;
+  document.querySelector('#webinar-count').textContent = upcoming.filter(e => String(e.category).toLowerCase() === 'webinar').length;
+  document.querySelector('#meeting-count').textContent = upcoming.filter(e => String(e.category).toLowerCase() === 'meeting').length;
+  document.querySelector('#demo-banner').hidden = !eventsData.some(event => event.draft);
+}
+
+filterButtons.forEach(button => button.addEventListener('click', () => {
+  activeEventFilter = button.dataset.eventFilter;
+  filterButtons.forEach(item => item.classList.toggle('active', item === button));
+  renderEvents();
+}));
+searchInput.addEventListener('input', renderEvents);
+
+// Maintainer helper — available only with ?manage=1
+const manager = document.querySelector('#event-manager');
+if (new URLSearchParams(location.search).get('manage') === '1') manager.hidden = false;
+
+const builderForm = document.querySelector('#event-builder-form');
+const codeOutput = document.querySelector('#event-code-output');
+const eventCode = document.querySelector('#event-code');
+
+builderForm.addEventListener('submit', event => {
+  event.preventDefault();
+  const data = Object.fromEntries(new FormData(builderForm));
+  const id = `${data.date || 'event'}-${String(data.title || 'update').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}`;
+  const object = {
+    id,
+    title: data.title,
+    category: data.category,
+    date: data.date,
+    start: data.start,
+    end: data.end,
+    timezone: 'Asia/Kolkata',
+    location: data.location,
+    mode: data.location && data.location.toLowerCase().includes('online') ? 'Online' : 'In person',
+    description: data.description,
+    organizer: data.organizer,
+    registrationUrl: data.registrationUrl,
+    featured: false,
+    draft: false
+  };
+  eventCode.textContent = JSON.stringify(object, null, 2) + ',';
+  codeOutput.hidden = false;
+});
+
+document.querySelector('#copy-event-code').addEventListener('click', async () => {
+  await navigator.clipboard.writeText(eventCode.textContent);
+  document.querySelector('#copy-event-code').textContent = 'Copied';
+  setTimeout(() => document.querySelector('#copy-event-code').textContent = 'Copy', 1400);
+});
+
+renderEvents();
+</script>
+</body>
+</html>
